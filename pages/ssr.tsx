@@ -13,6 +13,6 @@ export const getServerSideProps: GetServerSideProps<Data> = async () => {
   }
 }
 
-export function SSR({ name }: Data): JSX.Element {
+export default function SSR({ name }: Data): JSX.Element {
   return <div>SSR Page {name}</div>
 }
